@@ -1,6 +1,6 @@
 # Sword Fighting Bots
 This repo contains all the files and source code related to this CS 4100 project.
-Project guidlines can be found [here](https://rajagopalvenkat.com/teaching/CS4100/CS4100_Project_Guidelines.pdf).
+Project guidelines can be found [here](https://rajagopalvenkat.com/teaching/CS4100/CS4100_Project_Guidelines.pdf).
 
 ## Important Notes
 ### About Comments
