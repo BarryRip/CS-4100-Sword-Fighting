@@ -4,7 +4,7 @@ Project guidelines can be found [here](https://rajagopalvenkat.com/teaching/CS41
 
 ## Repo Structure
 The repository is structured into two main directories:
-- **UnityProject**: Contains the whole Unity project including source code, which can be opened as a Unity project by UnityHub.
+- **SwordFightUnity**: Contains the whole Unity project including source code, which can be opened as a Unity project by UnityHub.
 - **PythonFiles**: Contains all files that are used by or related to the Python virtual environment side of the project.
 
 Unfortunately, this repo can only hold up to 2 GB for our source code. Because of this, storing the entire virtual environment will be infeasable. So generally, we will be storing the Unity project in this repo, as well as any configurations or other files that can be placed directly into one's own virtual environment. The virtual environment must be set up on one's own machine. Information on setting up this virtual environment can be found in [the below section](#Setup).
@@ -79,7 +79,9 @@ If you can run this help command successfully, the Python side of things is all 
 ### Step 2: Unity Setup
 If you don't have Unity installed, the process for that is pretty simple. I'd recommend getting started with [this](https://docs.unity3d.com/hub/manual/index.html) tutorial on installing Unity Hub, which allows you to manage your Unity projects and install different versions of Unity.
 
+For this project, you will want Unity 2022.3 downloaded. The specific version I used was 2022.3.11f1.
 
+Open UnityHub and click the "Open" button on the top right. Navigate to the location that you cloned this Github repo, and select the SwordFightingUnity directory to open. This should launch Unity and load the Unity project, with all the necessary project settings and packages.
 
 ## Important Notes
 ### About Comments
@@ -95,8 +97,3 @@ As such, we should make sure to leave detailed comments and keep up on documenta
 - [Project Proposal](https://docs.google.com/document/d/1RttSZunMfO3l-zYLLr1a9zKFXj9-zJl461Nsug4n2Ds/edit?usp=sharing)
 - [Proposal Notes](https://docs.google.com/document/d/1bjnws28TNjxzjJyIBMW0jlY4n7hWPXb2DV5LNOszm2c/edit?usp=sharing)
 - [Final Report (TBD)]()
-
-We want Unity 2022.3 specifically for this demo (I used Unity 2022.3.11f1).
-
-Next, open or create a project, and go to Window > Package Manager. In the top left of the Package Manager window, change "Packages: In Project" to "Packages: Unity Registry" in the drop down. You can then scroll down to find the ML Agents package and install the latest version.
-
