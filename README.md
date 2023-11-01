@@ -96,4 +96,5 @@ As such, we should make sure to leave detailed comments and keep up on documenta
 - [Project Abstract](https://docs.google.com/document/d/15YgOB4iAarVcja2aBHLCG4l0LHIrKNnMfNQofseEgoQ/edit?usp=sharing)
 - [Project Proposal](https://docs.google.com/document/d/1RttSZunMfO3l-zYLLr1a9zKFXj9-zJl461Nsug4n2Ds/edit?usp=sharing)
 - [Proposal Notes](https://docs.google.com/document/d/1bjnws28TNjxzjJyIBMW0jlY4n7hWPXb2DV5LNOszm2c/edit?usp=sharing)
+- [Project Tasks](https://docs.google.com/document/d/1ON1UFuPIz32DkRHPDysAGG57dz48_XiHCx6mdlsMTZc/edit?usp=sharing)
 - [Final Report (TBD)]()
