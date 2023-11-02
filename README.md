@@ -81,7 +81,7 @@ If you don't have Unity installed, the process for that is pretty simple. I'd re
 
 For this project, you will want Unity 2022.3 downloaded. The specific version I used was 2022.3.11f1.
 
-Open UnityHub and click the "Open" button on the top right. Navigate to the location that you cloned this Github repo, and select the SwordFightingUnity directory to open. This should launch Unity and load the Unity project, with all the necessary project settings and packages.
+Open UnityHub and click the "Open" button on the top right. Navigate to the location that you cloned this Github repo, and select the SwordFightingUnity or the UnityMLAgentDemo directory to open. This should launch Unity and load the Unity project, with all the necessary project settings and packages.
 
 ## Important Notes
 ### About Comments
