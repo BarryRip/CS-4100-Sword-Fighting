@@ -21,7 +21,7 @@ This first step sets up the Python side of the project, including all relevant i
 
 I would highly recommend looking at the [Unity ML Agents Github repo](https://github.com/Unity-Technologies/ml-agents), specifically the [Installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md) in the docs directory. This contained most of the information I needed to set up this section.
 
-The first step is to download Python 3.10.12 or higher, **HOWEVER** from my testing this only works with 3.10 and under. I had trouble trying to get the dependencies right for Python 3.11. As such, I would suggest getting [Python 3.10.11](https://www.python.org/ftp/python/3.10.11/) and using that version for the following steps. As always, the full description can be found on the [Installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md#install-python-31012-or-higher).
+The first step is to download Python 3.10.12 or higher, **HOWEVER** from my testing this only works with versions 3.10.XX and under. I had trouble trying to get the dependencies right for Python 3.11. As such, I would suggest getting [Python 3.10.11](https://www.python.org/ftp/python/3.10.11/) and using that version for the following steps. As always, the full description can be found on the [Installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md#install-python-31012-or-higher).
 
 Next, I created a virtual environment in the Demo directory. This can be done with the command:
 ```
