@@ -10,6 +10,8 @@ public class MoveToGoalAgent : Agent
 {
     [SerializeField]
     private Transform targetTransform;
+    [SerializeField]
+    private Agent opponent;
     private float moveSpeed = 3f;
 
     // Everytime an episode starts or ends, this runs.
@@ -39,10 +41,18 @@ public class MoveToGoalAgent : Agent
     // - set up what specific observations in inspector
     public override void CollectObservations(VectorSensor sensor)
     {
+
         // observe agent position
-        sensor.AddObservation(transform.localPosition);
+        sensor.AddObservation(Normalize(transform.localPosition, -10f, 10f));
         // observe target position
-        sensor.AddObservation(targetTransform.localPosition);
+        sensor.AddObservation(Normalize(targetTransform.localPosition, -10f, 10f));
+    }
+
+    private Vector2 Normalize(Vector2 feature, float min, float max)
+    {
+        float normX = (feature.x - min) / (max - min);
+        float normY = (feature.y - min) / (max - min);
+        return new Vector2(normX, normY);
     }
 
     // On a given action, do something.
@@ -75,11 +85,13 @@ public class MoveToGoalAgent : Agent
             SetReward(1f);
             // This "stops" a single episode of the game
             EndEpisode();
+            opponent.EndEpisode();
         }
         else if (collision.gameObject.CompareTag("Wall"))
         {
             SetReward(-1f);
             EndEpisode();
+            opponent.EndEpisode();
         }
     }
 }
