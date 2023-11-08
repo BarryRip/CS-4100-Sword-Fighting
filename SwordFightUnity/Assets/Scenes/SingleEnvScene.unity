@@ -789,8 +789,8 @@ MonoBehaviour:
   opponent: {fileID: 1091299876}
   respawnPoint: {fileID: 1812569258}
   gameController: {fileID: 1749430712}
-  movementStrength: 0.1
-  rotationalStrength: 0.1
+  movementStrength: 1
+  rotationalStrength: 1
 --- !u!114 &1014858224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -960,8 +960,8 @@ MonoBehaviour:
   opponent: {fileID: 1014858218}
   respawnPoint: {fileID: 1061182907}
   gameController: {fileID: 1749430712}
-  movementStrength: 0.1
-  rotationalStrength: 0.1
+  movementStrength: 1
+  rotationalStrength: 1
 --- !u!114 &1091299878
 MonoBehaviour:
   m_ObjectHideFlags: 0
