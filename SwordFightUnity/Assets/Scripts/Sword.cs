@@ -16,8 +16,9 @@ public class Sword : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        GameObject other = collision.gameObject;
-        if (other.CompareTag("Body"))
+        // Calling CompareTag on the collider will check the tag of the sword.
+        // If we call CompareTag on the gameobject itself, it checks the tag of the parent agent instead.
+        if (collision.collider.CompareTag("Body"))
         {
             agent.OnSwordHit();
         }

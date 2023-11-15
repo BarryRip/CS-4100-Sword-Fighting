@@ -30,14 +30,16 @@ public class FighterAgent : Agent
     private float deathReward = -5f;
     // TODO: add timer penalty to increase speed of battles???
     private float timeReward = -0.01f;
-
     private float initialRotation;
+    private AgentData data;
 
-    private void Start()
+
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         initialRotation = transform.rotation.eulerAngles.z;
         rb.centerOfMass = Vector2.zero;
+        data = DataManager.Instance.RegisterAgent();
     }
 
     public override void OnEpisodeBegin()
@@ -70,7 +72,8 @@ public class FighterAgent : Agent
         int yAxisMovement = actions.DiscreteActions[1] - 1;
         int rotationalMovement = actions.DiscreteActions[2] - 1;
 
-        Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
+        // Debug code to log the action taken by the agent:
+        // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
 
         Vector2 force = new Vector2(xAxisMovement * movementStrength, yAxisMovement * movementStrength);
         rb.AddForce(force);
@@ -97,17 +100,33 @@ public class FighterAgent : Agent
     public void OnSwordHit()
     {
         AddReward(scoredPointReward);
+        data.LogHitDealt(swordDamage);
         opponent.GetComponent<FighterAgent>().OnTakeDamage(swordDamage);
     }
 
     public void OnTakeDamage(float damageTaken)
     {
         AddReward(tookDamageReward);
+        data.LogHitTaken(damageTaken);
         currentHP -= damageTaken;
         if (currentHP <= 0)
         {
             AddReward(deathReward);
-            gameController.EndGame();
+            gameController.EndGame(CompletedEpisodes);
         }
+    }
+
+    /// <summary>
+    /// Ends the current episode for this Agent only, and logs any
+    /// relevant data at the end of the episode.
+    /// <para/>
+    /// Fundamentally, this is the same as calling EndEpisode() on 
+    /// this agent, except we want to update the recorded data before reseting.
+    /// </summary>
+    public void EndEpisodeAndLogData()
+    {
+        data.rewardAtEnd = GetCumulativeReward();
+        data.healthAtEnd = currentHP;
+        EndEpisode();
     }
 }

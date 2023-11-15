@@ -10,7 +10,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,11 +19,13 @@ public class GameController : MonoBehaviour
         
     }
 
-    public void EndGame()
+    public void EndGame(int episodesCompletedSoFar)
     {
         foreach (FighterAgent agent in agents)
         {
-            agent.EndEpisode();
+            agent.EndEpisodeAndLogData();
         }
+        // Inform the DataManager that a new episode is beginning.
+        DataManager.Instance.OnNewEpisode(episodesCompletedSoFar + 1);
     }
 }
