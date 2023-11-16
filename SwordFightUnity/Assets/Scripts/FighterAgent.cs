@@ -19,6 +19,7 @@ public class FighterAgent : Agent
     private float rotationalStrength;
 
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
     // TODO: add to observations? may introduce new behaviors :)
     private float currentHP;
     private float maxHP = 3f;
@@ -37,6 +38,7 @@ public class FighterAgent : Agent
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
         initialRotation = transform.rotation.eulerAngles.z;
         rb.centerOfMass = Vector2.zero;
         data = DataManager.Instance.RegisterAgent();
@@ -46,6 +48,7 @@ public class FighterAgent : Agent
     {
         transform.position = respawnPoint.transform.position;
         currentHP = maxHP;
+        sr.color = Color.green;
         rb.totalTorque = 0f;
         rb.totalForce = Vector2.zero;
         rb.SetRotation(initialRotation);
@@ -74,9 +77,10 @@ public class FighterAgent : Agent
 
         // Debug code to log the action taken by the agent:
         // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
+        if (rotationalMovement >= 0) Debug.Log("Agent went rotating " + rotationalMovement);
 
         Vector2 force = new Vector2(xAxisMovement * movementStrength, yAxisMovement * movementStrength);
-        rb.AddForce(force);
+        rb.AddRelativeForce(force);
         rb.AddTorque(rotationalMovement * rotationalStrength);
     }
 
@@ -109,6 +113,9 @@ public class FighterAgent : Agent
         AddReward(tookDamageReward);
         data.LogHitTaken(damageTaken);
         currentHP -= damageTaken;
+        sr.color = currentHP == 3 ? Color.green :
+            currentHP == 2 ? Color.yellow :
+            currentHP == 1 ? Color.red : Color.grey;
         if (currentHP <= 0)
         {
             AddReward(deathReward);
@@ -128,5 +135,14 @@ public class FighterAgent : Agent
         data.rewardAtEnd = GetCumulativeReward();
         data.healthAtEnd = currentHP;
         EndEpisode();
+    }
+
+    public void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Wall"))
+        {
+            AddReward(-0.1f);
+            Debug.Log(gameObject.name + " HITTING WALL");
+        }
     }
 }
