@@ -2,6 +2,25 @@
 This repo contains all the files and source code related to this CS 4100 project.
 Project guidelines can be found [here](https://rajagopalvenkat.com/teaching/CS4100/CS4100_Project_Guidelines.pdf).
 
+## Resuming Pre-made Trials
+As an example, I will be using the EricYip branch and the ericyipbranchruns folder committed to that branch. Of course, these steps hold true for any others, just use the corresponding branch and result folder.
+
+First, pull the EricYip branch to ensure you have the most up-to-date Unity project for these runs.
+
+Next, go to your Python side directory. If you have run mlagents-learn once before, you should have a "results" directory which contains all runs you have done. Each directory in "results" is named after the run-id you specified for that run (unnamed runs will be saved under ppo).
+
+Place the ericyipbranchruns folder into the "results" directory.
+
+You should also take the corresponding config file (FighterAgent.yaml in EricYip Branch Files) from the repo and place it where ever you will be running your virtual environment. You will need the config file when you run mlagents-learn.
+
+On the Python side, activate your virtual environment and run:
+```
+mlagents-learn PATH_TO_FIGHTER_AGENT_YAML_FILE --run-id=ericyipbranchruns --resume
+```
+Where PATH_TO_FIGHTER_AGENT_YAML_FILE is the path to the FighterAgent.yaml file.
+
+If done correctly, mlagents should start up like normal. Now if you play the simulation in the Unity editor, it will resume those trials from the point I had saved it at. For this specific runs folder, the agents began utilizing spin attacks, and tended to fall into a pattern of one side attacking with a spin while the other takes a defensive position up against the wall.
+
 ## Repo Structure
 The repository is structured into two main directories:
 - **SwordFightUnity**: Contains the whole Unity project including source code, which can be opened as a Unity project by UnityHub.
