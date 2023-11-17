@@ -2,6 +2,25 @@
 This repo contains all the files and source code related to this CS 4100 project.
 Project guidelines can be found [here](https://rajagopalvenkat.com/teaching/CS4100/CS4100_Project_Guidelines.pdf).
 
+## Resuming Pre-made Trials
+As an example, I will be using the EricYip branch and the ericyipbranchruns folder committed to that branch. Of course, these steps hold true for any others, just use the corresponding branch and result folder.
+
+First, pull the EricYip branch to ensure you have the most up-to-date Unity project for these runs.
+
+Next, go to your Python side directory. If you have run mlagents-learn once before, you should have a "results" directory which contains all runs you have done. Each directory in "results" is named after the run-id you specified for that run (unnamed runs will be saved under ppo).
+
+Place the ericyipbranchruns folder into the "results" directory.
+
+You should also take the corresponding config file (FighterAgent.yaml in EricYip Branch Files) from the repo and place it where ever you will be running your virtual environment. You will need the config file when you run mlagents-learn.
+
+On the Python side, activate your virtual environment and run:
+```
+mlagents-learn PATH_TO_FIGHTER_AGENT_YAML_FILE --run-id=ericyipbranchruns --resume
+```
+Where PATH_TO_FIGHTER_AGENT_YAML_FILE is the path to the FighterAgent.yaml file.
+
+If done correctly, mlagents should start up like normal. Now if you play the simulation in the Unity editor, it will resume those trials from the point I had saved it at. For this specific runs folder, the agents began utilizing spin attacks, and tended to fall into a pattern of one side attacking with a spin while the other takes a defensive position up against the wall.
+
 ## Repo Structure
 The repository is structured into two main directories:
 - **SwordFightUnity**: Contains the whole Unity project including source code, which can be opened as a Unity project by UnityHub.
@@ -21,7 +40,7 @@ This first step sets up the Python side of the project, including all relevant i
 
 I would highly recommend looking at the [Unity ML Agents Github repo](https://github.com/Unity-Technologies/ml-agents), specifically the [Installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md) in the docs directory. This contained most of the information I needed to set up this section.
 
-The first step is to download Python 3.10.12 or higher, **HOWEVER** from my testing this only works with versions 3.10.XX and under. I had trouble trying to get the dependencies right for Python 3.11. As such, I would suggest getting [Python 3.10.11](https://www.python.org/ftp/python/3.10.11/) and using that version for the following steps. As always, the full description can be found on the [Installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md#install-python-31012-or-higher).
+The first step is to download Python 3.10.XX. **Since PyTorch does not fully support Python 3.11 (as of Nov 2023 at least), you MUST use a Python version 3.10.XX or below.** The version I used to set this up was [Python 3.10.11](https://www.python.org/ftp/python/3.10.11/). As always, for more information, the full description can be found on the [Installation instructions](https://github.com/Unity-Technologies/ml-agents/blob/develop/docs/Installation.md#install-python-31012-or-higher).
 
 Next, I created a virtual environment in the Demo directory. This can be done with the command:
 ```
@@ -147,4 +166,4 @@ As such, we should make sure to leave detailed comments and keep up on documenta
 - [Project Proposal](https://docs.google.com/document/d/1RttSZunMfO3l-zYLLr1a9zKFXj9-zJl461Nsug4n2Ds/edit?usp=sharing)
 - [Proposal Notes](https://docs.google.com/document/d/1bjnws28TNjxzjJyIBMW0jlY4n7hWPXb2DV5LNOszm2c/edit?usp=sharing)
 - [Project Tasks](https://docs.google.com/document/d/1ON1UFuPIz32DkRHPDysAGG57dz48_XiHCx6mdlsMTZc/edit?usp=sharing)
-- [Final Report (TBD)]()
+- [Final Report w/ Notes (Overleaf)](https://www.overleaf.com/project/654bc9f9542d6a03ac29392c)
