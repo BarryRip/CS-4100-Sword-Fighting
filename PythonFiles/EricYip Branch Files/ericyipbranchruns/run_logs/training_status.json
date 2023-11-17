@@ -1,0 +1,39 @@
+{
+    "FighterAgent": {
+        "elo": 1187.0036372152374,
+        "checkpoints": [
+            {
+                "steps": 154901,
+                "file_path": "results\\ppo\\FighterAgent\\FighterAgent-154901.onnx",
+                "reward": -6.439111749827862,
+                "creation_time": 1700175807.821642,
+                "auxillary_file_paths": [
+                    "results\\ppo\\FighterAgent\\FighterAgent-154901.pt"
+                ]
+            },
+            {
+                "steps": 411980,
+                "file_path": "results\\ppo\\FighterAgent\\FighterAgent-411980.onnx",
+                "reward": 0.9895299873314798,
+                "creation_time": 1700179111.0272543,
+                "auxillary_file_paths": [
+                    "results\\ppo\\FighterAgent\\FighterAgent-411980.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 411980,
+            "file_path": "results\\ppo\\FighterAgent.onnx",
+            "reward": 0.9895299873314798,
+            "creation_time": 1700179111.0272543,
+            "auxillary_file_paths": [
+                "results\\ppo\\FighterAgent\\FighterAgent-411980.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.0.0",
+        "torch_version": "1.13.1+cu117"
+    }
+}

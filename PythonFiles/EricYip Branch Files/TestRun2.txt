@@ -1,0 +1,1221 @@
+DATA (finished running at 11/16/2023 6:57:27 PM)
+
+Episode 1:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.067625
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.988077
+Episode 2:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.044339
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99238
+Episode 3:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.031321
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.975025
+Episode 4:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.103077
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.995544
+Episode 5:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.014629
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99942
+Episode 6:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.017049
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.994298
+Episode 7:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.049789
+	AgentId2:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9816452
+Episode 8:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.012656
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99913
+Episode 9:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.051435
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99972
+Episode 10:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.055828
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.991287
+Episode 11:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.037925
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.9691
+Episode 12:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.016001
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99785
+Episode 13:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.010934
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.978991
+Episode 14:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.019236
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.979923
+Episode 15:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.028877
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.987207
+Episode 16:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.030705
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99819
+Episode 17:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.033554
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.981323
+Episode 18:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.015438
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.98396
+Episode 19:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.030117
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.991359
+Episode 20:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.021775
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.978399
+Episode 21:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9821793
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.007702
+Episode 22:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.063412
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.995124
+Episode 23:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.017227
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.988269
+Episode 24:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.029342
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.975556
+Episode 25:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.038279
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99992
+Episode 26:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.060672
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.982021
+Episode 27:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9774123
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.021509
+Episode 28:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.041775
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99939
+Episode 29:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.027689
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.991612
+Episode 30:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.015115
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.992378
+Episode 31:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9771795
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.014586
+Episode 32:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.982533
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.031335
+Episode 33:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.022543
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.99134
+Episode 34:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.025281
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.98952
+Episode 35:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.016936
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.976172
+Episode 36:
+	AgentId1:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.98547
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.016253
+Episode 37:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.008543
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.9993
+Episode 38:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.033989
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.992605
+Episode 39:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.029196
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.984966
+Episode 40:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.027972
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.984415
+Episode 41:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.028292
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.972435
+Episode 42:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.018545
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.996005
+Episode 43:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.057994
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.98782
+Episode 44:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.035976
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.995958
+Episode 45:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.030518
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.965108
+Episode 46:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.051819
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.994187
+Episode 47:
+Episode 48:
+Episode 49:
+	AgentId1:
+		hitsTaken = 4
+		hitsDealt = 2
+		damageTaken = 4
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.036742
+	AgentId2:
+		hitsTaken = 2
+		hitsDealt = 4
+		damageTaken = 2
+		damageDealt = 4
+		healthAtEnd = 1
+		rewardAtEnd = 0.98177
+Episode 50:
+Episode 51:
+Episode 52:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 4
+		damageTaken = 3
+		damageDealt = 4
+		healthAtEnd = 1
+		rewardAtEnd = 0.9990893
+	AgentId2:
+		hitsTaken = 4
+		hitsDealt = 3
+		damageTaken = 4
+		damageDealt = 3
+		healthAtEnd = 0
+		rewardAtEnd = -6.009271
+Episode 53:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.00001
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 3
+Episode 54:
+Episode 55:
+Episode 56:
+Episode 57:
+Episode 58:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9960197
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.025417
+Episode 59:
+Episode 60:
+Episode 61:
+Episode 62:
+Episode 63:
+Episode 64:
+Episode 65:
+	AgentId1:
+		hitsTaken = 7
+		hitsDealt = 1
+		damageTaken = 7
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -8.001521
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 7
+		damageTaken = 1
+		damageDealt = 7
+		healthAtEnd = 3
+		rewardAtEnd = 2.99972
+Episode 66:
+Episode 67:
+Episode 68:
+Episode 69:
+Episode 70:
+Episode 71:
+	AgentId1:
+		hitsTaken = 7
+		hitsDealt = 1
+		damageTaken = 7
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -8.001672
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 7
+		damageTaken = 1
+		damageDealt = 7
+		healthAtEnd = 3
+		rewardAtEnd = 2.952716
+Episode 72:
+Episode 73:
+Episode 74:
+Episode 75:
+	AgentId1:
+		hitsTaken = 4
+		hitsDealt = 0
+		damageTaken = 4
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 4
+		damageTaken = 0
+		damageDealt = 4
+		healthAtEnd = 3
+		rewardAtEnd = 2.99715
+Episode 76:
+Episode 77:
+Episode 78:
+Episode 79:
+Episode 80:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 5
+		damageTaken = 3
+		damageDealt = 5
+		healthAtEnd = 2
+		rewardAtEnd = 1.99947
+	AgentId2:
+		hitsTaken = 5
+		hitsDealt = 3
+		damageTaken = 5
+		damageDealt = 3
+		healthAtEnd = 0
+		rewardAtEnd = -7.01136
+Episode 81:
+Episode 82:
+Episode 83:
+Episode 84:
+Episode 85:
+Episode 86:
+	AgentId1:
+		hitsTaken = 6
+		hitsDealt = 3
+		damageTaken = 6
+		damageDealt = 3
+		healthAtEnd = 0
+		rewardAtEnd = -7.00047
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 6
+		damageTaken = 3
+		damageDealt = 6
+		healthAtEnd = 2
+		rewardAtEnd = 1.996616
+Episode 87:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.001612
+	AgentId2:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9847194
+Episode 88:
+Episode 89:
+Episode 90:
+Episode 91:
+Episode 92:
+Episode 93:
+Episode 94:
+Episode 95:
+Episode 96:
+Episode 97:
+Episode 98:
+Episode 99:
+Episode 100:
+Episode 101:
+Episode 102:
+Episode 103:
+Episode 104:
+	AgentId1:
+		hitsTaken = 13
+		hitsDealt = 1
+		damageTaken = 13
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.00003
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 13
+		damageTaken = 1
+		damageDealt = 13
+		healthAtEnd = 2
+		rewardAtEnd = 1.996909
+Episode 105:
+Episode 106:
+Episode 107:
+Episode 108:
+	AgentId1:
+		hitsTaken = 6
+		hitsDealt = 2
+		damageTaken = 6
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -8.001462
+	AgentId2:
+		hitsTaken = 2
+		hitsDealt = 6
+		damageTaken = 2
+		damageDealt = 6
+		healthAtEnd = 3
+		rewardAtEnd = 2.996317
+Episode 109:
+Episode 110:
+Episode 111:
+Episode 112:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 3
+		damageTaken = 3
+		damageDealt = 3
+		healthAtEnd = 0
+		rewardAtEnd = -6.059419
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 3
+		damageTaken = 3
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9746532
+Episode 113:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.00067
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.974366
+Episode 114:
+	AgentId1:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.996926
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.00332
+Episode 115:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.009341
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.925995
+Episode 116:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9558128
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.005406
+Episode 117:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.00178
+	AgentId2:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9869634
+Episode 118:
+Episode 119:
+Episode 120:
+Episode 121:
+Episode 122:
+	AgentId1:
+		hitsTaken = 7
+		hitsDealt = 4
+		damageTaken = 7
+		damageDealt = 4
+		healthAtEnd = 0
+		rewardAtEnd = -6.031272
+	AgentId2:
+		hitsTaken = 4
+		hitsDealt = 7
+		damageTaken = 4
+		damageDealt = 7
+		healthAtEnd = 1
+		rewardAtEnd = 0.9955373
+Episode 123:
+	AgentId1:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 1
+		rewardAtEnd = 0.9972575
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -6.028075
+Episode 124:
+Episode 125:
+	AgentId1:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99928
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.040303
+Episode 126:
+	AgentId1:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.995959
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.048591
+Episode 127:
+Episode 128:
+Episode 129:
+Episode 130:
+Episode 131:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 5
+		damageTaken = 3
+		damageDealt = 5
+		healthAtEnd = 2
+		rewardAtEnd = 1.996976
+	AgentId2:
+		hitsTaken = 5
+		hitsDealt = 3
+		damageTaken = 5
+		damageDealt = 3
+		healthAtEnd = 0
+		rewardAtEnd = -7.007811
+Episode 132:
+Episode 133:
+Episode 134:
+Episode 135:
+Episode 136:
+Episode 137:
+	AgentId1:
+		hitsTaken = 0
+		hitsDealt = 7
+		damageTaken = 0
+		damageDealt = 7
+		healthAtEnd = 3
+		rewardAtEnd = 2.994453
+	AgentId2:
+		hitsTaken = 7
+		hitsDealt = 0
+		damageTaken = 7
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.082842
+Episode 138:
+Episode 139:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 1
+		damageTaken = 3
+		damageDealt = 1
+		healthAtEnd = 0
+		rewardAtEnd = -7.004484
+	AgentId2:
+		hitsTaken = 1
+		hitsDealt = 3
+		damageTaken = 1
+		damageDealt = 3
+		healthAtEnd = 2
+		rewardAtEnd = 1.992852
+Episode 140:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.001289
+	AgentId2:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99522
+Episode 141:
+Episode 142:
+Episode 143:
+Episode 144:
+Episode 145:
+Episode 146:
+Episode 147:
+Episode 148:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 6
+		damageTaken = 3
+		damageDealt = 6
+		healthAtEnd = 3
+		rewardAtEnd = 2.999109
+	AgentId2:
+		hitsTaken = 6
+		hitsDealt = 3
+		damageTaken = 6
+		damageDealt = 3
+		healthAtEnd = 0
+		rewardAtEnd = -8.042583
+Episode 149:
+	AgentId1:
+		hitsTaken = 0
+		hitsDealt = 3
+		damageTaken = 0
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.998839
+	AgentId2:
+		hitsTaken = 3
+		hitsDealt = 0
+		damageTaken = 3
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.031997
+Episode 150:
+Episode 151:
+Episode 152:
+	AgentId1:
+		hitsTaken = 3
+		hitsDealt = 2
+		damageTaken = 3
+		damageDealt = 2
+		healthAtEnd = 0
+		rewardAtEnd = -8.001432
+	AgentId2:
+		hitsTaken = 2
+		hitsDealt = 3
+		damageTaken = 2
+		damageDealt = 3
+		healthAtEnd = 3
+		rewardAtEnd = 2.99697
+Episode 153:
+Episode 154:
+Episode 155:
+	AgentId1:
+		hitsTaken = 0
+		hitsDealt = 4
+		damageTaken = 0
+		damageDealt = 4
+		healthAtEnd = 3
+		rewardAtEnd = 2.998439
+	AgentId2:
+		hitsTaken = 4
+		hitsDealt = 0
+		damageTaken = 4
+		damageDealt = 0
+		healthAtEnd = 0
+		rewardAtEnd = -8.044689
