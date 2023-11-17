@@ -31,6 +31,7 @@ public class FighterAgent : Agent
     private float deathReward = -5f;
     // TODO: add timer penalty to increase speed of battles???
     private float timeReward = -0.01f;
+    private float wallReward = -0.00001f;
     private float initialRotation;
     private AgentData data;
 
@@ -77,7 +78,7 @@ public class FighterAgent : Agent
 
         // Debug code to log the action taken by the agent:
         // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
-        if (rotationalMovement >= 0) Debug.Log("Agent went rotating " + rotationalMovement);
+        if (rotationalMovement < 0) Debug.Log("Rot: " + rotationalMovement);
 
         Vector2 force = new Vector2(xAxisMovement * movementStrength, yAxisMovement * movementStrength);
         rb.AddRelativeForce(force);
@@ -141,8 +142,7 @@ public class FighterAgent : Agent
     {
         if (collision.collider.CompareTag("Wall"))
         {
-            AddReward(-0.1f);
-            Debug.Log(gameObject.name + " HITTING WALL");
+            AddReward(wallReward);
         }
     }
 }
