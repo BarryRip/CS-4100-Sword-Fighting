@@ -290,7 +290,11 @@ public class AgentData3DArray
                 csv += agentName + "." + fieldName;
                 for (int i = 0; i < dictionaryList.Count; i++)
                 {
-                    if (!dictionaryList[i].ContainsKey(agentName)) continue;
+                    if (!dictionaryList[i].ContainsKey(agentName))
+                    {
+                        csv += ",";
+                        continue;
+                    }
                     csv += "," + dictionaryList[i][agentName][fieldName];
                 }
                 csv += "\n";
