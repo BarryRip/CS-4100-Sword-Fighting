@@ -76,7 +76,7 @@ public class FighterAgent : Agent
         // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
 
         Vector2 force = new Vector2(xAxisMovement * movementStrength, yAxisMovement * movementStrength);
-        rb.AddForce(force);
+        rb.AddRelativeForce(force);
         rb.AddTorque(rotationalMovement * rotationalStrength);
     }
 
