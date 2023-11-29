@@ -4,13 +4,15 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
+using System.Diagnostics;
+using System.ComponentModel.Design;
 
 public class FighterAgent : Agent
 {
     [SerializeField]
     private GameObject opponent;
     [SerializeField]
-    private GameObject respawnPoint;
+    private GameObject respawnPoint = null;
     [SerializeField]
     private GameController gameController;
     [SerializeField]
@@ -21,17 +23,25 @@ public class FighterAgent : Agent
     private Rigidbody2D rb;
     // TODO: add to observations? may introduce new behaviors :)
     private float currentHP;
-    private float maxHP = 3f;
+    private float maxHP = 1f;
+    private float currentTime;
+    private float startTime;
+    private float timeElapsed;
 
     private float swordDamage = 1f;
 
-    private float scoredPointReward = 1f;
-    private float tookDamageReward = -1f;
-    private float deathReward = -5f;
-    // TODO: add timer penalty to increase speed of battles???
-    private float timeReward = -0.01f;
+    private float scoredPointReward = 30f;
+    private float tookDamageReward = -3f;
+    private float deathReward = -3f;
+
+    private float timeRewardFactor = 0.05f;
+    private float timeOutReward = -8f;
+
     private float initialRotation;
     private AgentData data;
+
+    private float sceneWidth = 8f;
+    private float sceneHeight = 4f;
 
 
     private void Awake()
@@ -42,21 +52,45 @@ public class FighterAgent : Agent
         data = DataManager.Instance.RegisterAgent();
     }
 
+
+
     public override void OnEpisodeBegin()
     {
-        transform.position = respawnPoint.transform.position;
+        RandomizeRespawn();
         currentHP = maxHP;
         rb.totalTorque = 0f;
         rb.totalForce = Vector2.zero;
+        startTime = Time.time;
+    }
+
+    public void ReSpawn()
+    {
+        transform.position = respawnPoint.transform.position;
         rb.SetRotation(initialRotation);
+    }
+
+    public void RandomizeRespawn()
+    {
+        Vector2 randomPosition = new Vector2(Random.Range(-sceneWidth, sceneWidth), Random.Range(-sceneHeight, sceneHeight));
+        transform.position = randomPosition;
+        // set random rotation
+        float randomRotation = Random.Range(0f, 360f);
     }
 
     public override void CollectObservations(VectorSensor sensor)
     {
+        // self position
         sensor.AddObservation(Normalize(transform.localPosition, -10, 10));
         sensor.AddObservation(((transform.rotation.eulerAngles.z % 360) + 360) % 360);
+
+        // opponent position
         sensor.AddObservation(Normalize(opponent.transform.localPosition, -10, 10));
         sensor.AddObservation(((opponent.transform.rotation.eulerAngles.z % 360) + 360) % 360);
+
+        // time elapsed
+        timeElapsed = Time.time - startTime;
+        sensor.AddObservation(timeElapsed);
+        
     }
 
     private Vector2 Normalize(Vector2 feature, float min, float max)
@@ -71,6 +105,7 @@ public class FighterAgent : Agent
         int xAxisMovement = actions.DiscreteActions[0] - 1;
         int yAxisMovement = actions.DiscreteActions[1] - 1;
         int rotationalMovement = actions.DiscreteActions[2] - 1;
+        UnityEngine.Debug.Log(transform.name + ' ' + actions.DiscreteActions[0] + ' ' + actions.DiscreteActions[1] + ' ' + actions.DiscreteActions[2]);
 
         // Debug code to log the action taken by the agent:
         // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
@@ -78,11 +113,23 @@ public class FighterAgent : Agent
         Vector2 force = new Vector2(xAxisMovement * movementStrength, yAxisMovement * movementStrength);
         rb.AddRelativeForce(force);
         rb.AddTorque(rotationalMovement * rotationalStrength);
+
+        // float distance = Vector2.Distance(transform.position, opponent.transform.position);
+        // float reward = -timeRewardFactor * (distance);
+        // AddReward(reward);
+
+        float distance = Vector2.Distance(transform.position, opponent.transform.position);
+        float reward = timeRewardFactor * (1/distance);
+        AddReward(reward);
+
+
     }
+
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
         ActionSegment<int> discreteActions = actionsOut.DiscreteActions;
+        
         discreteActions[0] = 1+Mathf.CeilToInt(Input.GetAxisRaw("Horizontal"));
         discreteActions[1] = 1+Mathf.CeilToInt(Input.GetAxisRaw("Vertical"));
         int discreteRotation = 1;
@@ -116,6 +163,12 @@ public class FighterAgent : Agent
         }
     }
 
+    public void TimeOut()
+    {   
+        AddReward(timeOutReward);
+
+    }
+
     /// <summary>
     /// Ends the current episode for this Agent only, and logs any
     /// relevant data at the end of the episode.
@@ -125,6 +178,8 @@ public class FighterAgent : Agent
     /// </summary>
     public void EndEpisodeAndLogData()
     {
+     //   UnityEngine.Debug.Log("agent: " + transform.name);
+     //   UnityEngine.Debug.Log("eposide reward: " + GetCumulativeReward());
         data.rewardAtEnd = GetCumulativeReward();
         data.healthAtEnd = currentHP;
         EndEpisode();
