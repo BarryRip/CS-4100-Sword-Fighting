@@ -4,8 +4,6 @@ using UnityEngine;
 using Unity.MLAgents;
 using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
-using System.Diagnostics;
-using System.ComponentModel.Design;
 
 public class FighterAgent : Agent
 {
@@ -19,6 +17,10 @@ public class FighterAgent : Agent
     private float movementStrength;
     [SerializeField]
     private float rotationalStrength;
+    [SerializeField]
+    private TextMesh label;
+    [SerializeField]
+    private GameObject envBlock;
 
     private Rigidbody2D rb;
     // TODO: add to observations? may introduce new behaviors :)
@@ -34,7 +36,7 @@ public class FighterAgent : Agent
     private float tookDamageReward = -3f;
     private float deathReward = -3f;
 
-    private float timeRewardFactor = 0.05f;
+    private float timeRewardFactor = 0.005f;
     private float timeOutReward = -8f;
 
     private float initialRotation;
@@ -42,7 +44,9 @@ public class FighterAgent : Agent
 
     private float sceneWidth = 8f;
     private float sceneHeight = 4f;
+    private Vector2 envCenter = new Vector2();
 
+    private string debugLabel;
 
     private void Awake()
     {
@@ -50,9 +54,20 @@ public class FighterAgent : Agent
         initialRotation = transform.rotation.eulerAngles.z;
         rb.centerOfMass = Vector2.zero;
         data = DataManager.Instance.RegisterAgent();
+        if (envBlock != null)
+        {
+            envCenter = envBlock.transform.position;
+        }
     }
 
-
+    private void Update()
+    {
+        string txt = "";
+        txt += "Reward: " + GetCumulativeReward() + "\n";
+        txt += debugLabel + "\n";
+        label.text = txt;
+        label.gameObject.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
+    }
 
     public override void OnEpisodeBegin()
     {
@@ -72,9 +87,10 @@ public class FighterAgent : Agent
     public void RandomizeRespawn()
     {
         Vector2 randomPosition = new Vector2(Random.Range(-sceneWidth, sceneWidth), Random.Range(-sceneHeight, sceneHeight));
-        transform.position = randomPosition;
+        transform.position = randomPosition + envCenter;
         // set random rotation
         float randomRotation = Random.Range(0f, 360f);
+        transform.rotation = Quaternion.Euler(0, 0, randomRotation);
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -120,9 +136,9 @@ public class FighterAgent : Agent
 
         float distance = Vector2.Distance(transform.position, opponent.transform.position);
         float reward = timeRewardFactor * (1/distance);
-        AddReward(reward);
+        //AddReward(reward);
 
-
+        debugLabel = "Distance: " + distance + "\nDistanceReward: " + reward;
     }
 
 
