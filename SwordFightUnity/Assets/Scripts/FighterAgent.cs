@@ -6,6 +6,7 @@ using Unity.MLAgents.Sensors;
 using Unity.MLAgents.Actuators;
 using System.Diagnostics;
 using System.ComponentModel.Design;
+using System.Security.Cryptography.X509Certificates;
 
 public class FighterAgent : Agent
 {
@@ -30,18 +31,22 @@ public class FighterAgent : Agent
 
     private float swordDamage = 1f;
 
-    private float scoredPointReward = 30f;
+    private float scoredPointReward = 50f;
     private float tookDamageReward = -3f;
     private float deathReward = -3f;
+    private float wallReward = -0.003f;
 
-    private float timeRewardFactor = 0.05f;
-    private float timeOutReward = -8f;
+    private float timeRewardFactor = 0.5f;
+    private float timeOutReward = -0f;
 
     private float initialRotation;
     private AgentData data;
 
     private float sceneWidth = 8f;
     private float sceneHeight = 4f;
+
+    private float lastDistance = 999f;
+    private int touchingWall = 0;
 
 
     private void Awake()
@@ -56,7 +61,7 @@ public class FighterAgent : Agent
 
     public override void OnEpisodeBegin()
     {
-        RandomizeRespawn();
+        ReSpawn();
         currentHP = maxHP;
         rb.totalTorque = 0f;
         rb.totalForce = Vector2.zero;
@@ -75,6 +80,7 @@ public class FighterAgent : Agent
         transform.position = randomPosition;
         // set random rotation
         float randomRotation = Random.Range(0f, 360f);
+        rb.SetRotation(randomRotation);
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -87,9 +93,12 @@ public class FighterAgent : Agent
         sensor.AddObservation(Normalize(opponent.transform.localPosition, -10, 10));
         sensor.AddObservation(((opponent.transform.rotation.eulerAngles.z % 360) + 360) % 360);
 
-        // time elapsed
-        timeElapsed = Time.time - startTime;
-        sensor.AddObservation(timeElapsed);
+        // distance between agents
+        float distance = Vector2.Distance(transform.position, opponent.transform.position);
+        sensor.AddObservation(distance);
+
+        // if touching wall
+        sensor.AddObservation(touchingWall);
         
     }
 
@@ -105,10 +114,12 @@ public class FighterAgent : Agent
         int xAxisMovement = actions.DiscreteActions[0] - 1;
         int yAxisMovement = actions.DiscreteActions[1] - 1;
         int rotationalMovement = actions.DiscreteActions[2] - 1;
-        UnityEngine.Debug.Log(transform.name + ' ' + actions.DiscreteActions[0] + ' ' + actions.DiscreteActions[1] + ' ' + actions.DiscreteActions[2]);
+        if (Input.GetKeyDown("space")){
+            UnityEngine.Debug.Log(transform.name + ' ' + actions.DiscreteActions[0] + ' ' + actions.DiscreteActions[1] + ' ' + actions.DiscreteActions[2]);
+        }
 
-        // Debug code to log the action taken by the agent:
-        // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
+            // Debug code to log the action taken by the agent:
+            // Debug.Log(xAxisMovement + " / " + yAxisMovement + " / " + rotationalMovement);
 
         Vector2 force = new Vector2(xAxisMovement * movementStrength, yAxisMovement * movementStrength);
         rb.AddRelativeForce(force);
@@ -119,8 +130,11 @@ public class FighterAgent : Agent
         // AddReward(reward);
 
         float distance = Vector2.Distance(transform.position, opponent.transform.position);
-        float reward = timeRewardFactor * (1/distance);
-        AddReward(reward);
+        if (distance < lastDistance)
+        {
+            AddReward(this.timeRewardFactor * (lastDistance - distance));
+        }
+        lastDistance = distance;
 
 
     }
@@ -169,6 +183,25 @@ public class FighterAgent : Agent
 
     }
 
+    public void OnCollisionStay2D(Collision2D collision)
+    {
+        // UnityEngine.Debug.Log("hit");
+        if (collision.collider.CompareTag("Wall"))
+        {
+        //    UnityEngine.Debug.Log("wall hit");
+            AddReward(wallReward);
+            touchingWall = 1;
+        }
+    }
+
+    public void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Wall"))
+        {
+            touchingWall = 0;
+        }
+    }
+
     /// <summary>
     /// Ends the current episode for this Agent only, and logs any
     /// relevant data at the end of the episode.
@@ -178,8 +211,8 @@ public class FighterAgent : Agent
     /// </summary>
     public void EndEpisodeAndLogData()
     {
-     //   UnityEngine.Debug.Log("agent: " + transform.name);
-     //   UnityEngine.Debug.Log("eposide reward: " + GetCumulativeReward());
+        UnityEngine.Debug.Log("agent: " + transform.name);
+        UnityEngine.Debug.Log("eposide reward: " + GetCumulativeReward());
         data.rewardAtEnd = GetCumulativeReward();
         data.healthAtEnd = currentHP;
         EndEpisode();

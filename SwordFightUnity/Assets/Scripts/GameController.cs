@@ -7,7 +7,7 @@ public class GameController : MonoBehaviour
     [SerializeField]
     private List<FighterAgent> agents;
     private float startTime;
-    private float timeLimit = 40f;
+    private float timeLimit = 90f;
     private int episodesCompletedSoFar = 0;
 
     // Start is called before the first frame update
